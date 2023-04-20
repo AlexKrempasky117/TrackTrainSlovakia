@@ -4,37 +4,3 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
-
-@model IEnumerable<Trains>
-
-
-<div class="row">
-    <div class="table table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Vlak</th>
-                    <th>Vzdialenost k cielu</th>
-                    <th>Meskanie Vlaku</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.vlak_id</td>
-                        <td>@item.Vlak</td>
-                        <td>@item.Vzdialenost_k_cielu</td>
-                        <td>@item.Meskanie</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-
-
-    </div>
-
-
-
-</div>
