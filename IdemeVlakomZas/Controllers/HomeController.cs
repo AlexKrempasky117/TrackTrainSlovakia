@@ -23,7 +23,7 @@ namespace IdemeVlakomZas.Controllers
 
         public IActionResult Privacy()
         {
-            IEnumerable<Trains> VlakySVK = _db.VlakySVK.ToList();
+            
             return View();
         }
 
